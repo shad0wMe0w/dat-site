@@ -1,0 +1,72 @@
+html, body, footer, p, ul, ol, li, h1, h2, h3{
+  margin: 0;
+  padding: 0;
+  border: none;
+  font:inherit;
+}
+
+body{
+  font: 16px Helvetica, Arial, sans-serif;
+  margin: auto 30px;
+
+}
+h1{
+  margin-bottom: 15px;
+}
+h2{
+  margin-bottom: 15px;
+}
+#site-brand img{
+  float: left;
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin: 15px;
+}
+#site-brand h1{
+  font-size: 20px;
+  margin: 15px;
+  width: 300px;
+  display: block;
+  vertical-align:middle;
+}
+.main-nav{
+  display: block;
+  /*margin: 0 auto;*/
+  height: 48px;
+  border-bottom: 1px solid #4d4d4d;
+  text-align: center;
+}
+
+.main-nav ul{
+  display: inline;
+}
+
+.main-nav ul li {
+  display: inline;
+  list-style: none;
+  padding-right: 25px;
+}
+.main-nav li:last-child {
+  padding-right: 0;
+}
+.news-item{
+  border: 1px solid;
+  padding: 20px;
+  list-style: none;
+}
+.about-dat{
+  margin-bottom: 40px;
+}
+.about-dat a[role='button']{
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #696969;
+  border: 1px solid #444444;
+}
+footer{
+  border: 1px solid;
+  background-color: #f5f5f5;
+}
