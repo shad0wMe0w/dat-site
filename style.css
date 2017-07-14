@@ -135,6 +135,7 @@ section{
   list-style: none;
   padding-left: 0;
   line-height: 1.6;
+  margin-bottom: 40px;
 }
 .newsfeed header{
   height: 45px;

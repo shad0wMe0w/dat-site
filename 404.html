@@ -1,9 +1,10 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
+  <link rel=stylesheet href="uikit-grid.css">
   <link rel=stylesheet href="style.css">
 </head>
-<body>
+<body class="uikit-body uikit-grid">
   <header class="site-header">
     <section id="site-brand">
       <img src="#" alt="dat-logo">
@@ -34,30 +35,36 @@
     </nav>
   </section>
   </header>
-  <main class="main-content">
-    <section>
-      <h1>Oops, that's not right!</h1>
-      <h2>Sorry, the page you're looking for doesn't exist</h2>
-      <div class="light-dark">
-        <a role="button" href="index.html">Go to Service Manual home</a>
+  <main class="container main-content">
+    <section class="row">
+        <div class="col-sm-7 col-sm-offset-2 col-md-7 col-lg-7">
+        <h1>Oops, that's not right!</h1>
+        <h2>Sorry, the page you're looking for doesn't exist</h2>
+        <!--http://www.placecage.com/c/600/400-->
+        <img class="card__image" src="http://fillmurray.com/600/400" alt="A frame filled with kittens to make you feel better">
+        <div class="light-dark">
+          <a role="button" href="index.html">Go to Guides home</a>
+        </div>
       </div>
     </section>
-    <section>
-      <h3>Looking for guidance?</h3>
-      <p>Explore these knowledge areas:<p>
-        <h4>Recently updated</h4>
-        <div class="list-404">
+    <section class="row">
+      <div class="col-sm-7 col-sm-offset-2 col-md-7 col-lg-7">
+        <h3>Looking for guidance?</h3>
+        <p>Explore these knowledge areas:<p>
+          <h4>Recently updated</h4>
+          <div class="list-404">
+            <ul>
+              <li><a href="#">Content auditing</a></li>
+              <li><a href="#">Prototyping and alpha</a></li>
+            </ul>
+          </div>
+          <div class="list-404">
+          <h4>How-tos</h4>
           <ul>
-            <li><a href="#">Content auditing</a></li>
-            <li><a href="#">Prototyping and alpha</a></li>
+            <li><a href="#">Planning user research</a></li>
+            <li><a href="#">Interviewing users</a></li>
           </ul>
         </div>
-        <div class="list-404">
-        <h4>How-tos</h4>
-        <ul>
-          <li><a href="#">Planning user research</a></li>
-          <li><a href="#">Interviewing users</a></li>
-        </ul>
       </div>
     </section>
     <!--<section class="jumbo">
@@ -70,7 +77,7 @@
     </section>-->
   </main>
 <footer>
-  <img src="http://placehold.it/150x120" alt="dat logo">
+  <img src="http://placehold.it/150x120&text=DAT+logo" alt="dat logo">
   <p>Footer will be here Soon&trade;</p>
 </footer>
 </body>
