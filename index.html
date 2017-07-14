@@ -1,9 +1,10 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
+  <link rel=stylesheet href="uikit-grid.css">
   <link rel=stylesheet href="style.css">
 </head>
-<body>
+<body class="uikit-body uikit-grid">
   <header class="site-header">
     <section id="site-brand">
       <img src="#" alt="dat-logo">
@@ -34,57 +35,84 @@
     </nav>
   </section>
   </header>
-  <main class="main-content">
-    <section class="showcase">
-      <h2>DAT Showcase</h2>
-      <img class="banner" src="http://placehold.it/2000x1000?text=Service+Design+Manual+Schtuff" alt="Service Design Manual">
-      <h3>Presenting...The Service Design Manual</h3>
-      <p>We are transforming how the Australian government buys digital services, making it easier for businesses of all sizes to access government contracts.</p>
-      <div class="tag">Profile</div>
-    </section>
-    <section class="about-dat">
-      <h1>About DAT</h1>
-      <p>The Digital Agency of Transmutation exists to make it easy for people to deal with mutations and becoming mutants, by helping mutants transform services to be simple, clear and fast.</p>
-      <div class="light-dark">
-        <a role="button" href="404.html">Learn about DAT</a>
-      </div>
-    </section>
-    <section class="newsfeed">
-      <header>
-        <h2>Newsfeed</h2>
-        <a class="link-inline" href="404.html">Moar news</a>
-      </header>
-      <ul class="list-news-item">
-        <li>
-          <article class="news-item">
-            <date>16/6/2017</date>
-            <h1><a href="#">News item heading here</a></h1>
-            <p class="excerpt">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne &#8230;</p>
-            <p class="tag">Digital Transmutation</p><p class="tag">Zombies</p>
-          </article>
-        </li>
-        <li>
-          <article class="news-item">
-            <date>16/6/2017</date>
-            <h1><a href="#">News item heading here</a></h1>
-            <p class="excerpt">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne &#8230;</p>
-            <p class="tag">Psionics</p><p class="tag">Care Tips</p>
-          </article>
-        </li>
-        <li>
-          <article class="news-item">
-            <date>16/6/2017</date>
-            <h1><a href="#">News item heading here</a></h1>
-            <p class="excerpt">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne &#8230;</p>
-            <p class="tag">DIY</p><p class="tag">Strategy</p>
-          </article>
-        </li>
-      </ul>
-
-
-    </section>
+  <main class="container main-content">
+        <section class="row showcase">
+          <div class="col-sm-7 col-sm-offset-2 col-md-7 col-lg-7">
+            <h2>DAT Showcase</h2>
+              <a class="card">
+                <img class="card__image" src="http://placehold.it/2000x1000?text=Service+Design+Manual+Schtuff" alt="Service Design Manual Homepage">
+                <div class="card__wrapper">
+                  <h3 style="card__headline">Presenting...The Service Design Manual</h3>
+                  <p class="card__text">We are transforming how the Australian government buys digital services, making it easier for businesses of all sizes to access government contracts.</p>
+                  <div class="tag">Profile</div>
+                </div>
+              </a>
+          </div>
+        </section>
+        <section class="row about-dat">
+          <div class="col-sm-7 col-sm-offset-2 col-md-7 col-lg-7">
+            <h1>About DAT</h1>
+            <p>The Digital Agency of Transmutation exists to make it easy for people to deal with mutations and becoming mutants, by helping mutants transform services to be simple, clear and fast.</p>
+            <div class="light-dark">
+              <a role="button" href="404.html">Learn about DAT</a>
+            </div>
+          </div>
+        </section>
+        <section class="row newsfeed">
+          <div class="col-sm-7 col-sm-offset-2 col-md-7 col-lg-7">
+            <header>
+              <h2>Newsfeed</h2>
+              <a class="link-inline" href="404.html">Moar news</a>
+            </header>
+              <ul class="row list-news-item">
+                <li class="col-sm-12 col-md-12 col-lg-12">
+                  <a class="card">
+                    <img class="card__image" src="https://www.dta.gov.au/images/blog-thumbnails/Pony-Thumb.png" alt>
+                    <div class="card__wrapper">
+                      <date>16/6/2017</date>
+                      <strong class="card__headline">News item heading here</strong>
+                      <p class="card__text">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne &#8230;</p>
+                      <p class="tag">Digital Transmutation</p><p class="tag">Zombies</p>
+                   </div>
+                  </a>
+                </li>
+                <li class="col-sm-6 col-md-6 col-lg-6">
+                  <a class="card">
+                    <img class="card__image" src="https://www.dta.gov.au/images/blog-thumbnails/whitegreyblack_thumb.png" alt>
+                    <div class="card__wrapper">
+                      <date>16/6/2017</date>
+                      <strong class="card__headline">News item heading here</strong>
+                      <p class="card__text">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne &#8230;</p>
+                      <p class="tag">Digital Transmutation</p><p class="tag">Zombies</p>
+                   </div>
+                  </a>
+                </li>
+                <li class="col-sm-6 col-md-6 col-lg-6">
+                  <a class="card">
+                    <div class="card__wrapper">
+                      <date>16/6/2017</date>
+                      <strong class="card__headline">News item heading here</strong>
+                      <p class="card__text">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne &#8230;</p>
+                      <p class="tag">Policy</p><p class="tag">Zombies</p>
+                   </div>
+                  </a>
+                </li>
+                <li class="col-sm-6 col-md-6 col-lg-6">
+                  <a class="card">
+                    <div class="card__wrapper">
+                      <date>16/6/2017</date>
+                      <strong class="card__headline">News item heading here</strong>
+                      <p class="card__text">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne &#8230;</p>
+                      <p class="tag">Policy</p><p class="tag">Zombies</p>
+                   </div>
+                  </a>
+                </li>
+              </ul><!-- end row -->
+            </div>
+          </div>
+        </section>
   </main>
 <footer>
-  <p>Footer will be here Soon&trade;</p>
+  <p><strong>DAT</strong> Footer will be here Soon&trade;</p>
 </footer>
 </body>

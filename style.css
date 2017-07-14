@@ -1,12 +1,26 @@
-html, body, footer, p, ul, ol, li, h1, h2, h3{
+html, body, footer, p, , ol, li, h1, h2, h3{
   margin: 0;
   padding: 0;
   border: none;
-  font:inherit;
+  /*font-family: "Open Sans", Verdana, "Bitstream Vera Sans", sans-serif;*/
+
 }
 
+/* Colours from uikit:
+Hero: #115361;
+primary: #1B7991;
+Secondary: #313131;
+Background: #f0f3f5;
+Border: #555;
+Text #313131;
+Link: #5bcbe3;
+
+*/
+
 body{
-  font: 16px Helvetica, Arial, sans-serif;
+  /* System Fonts as used by GitHub */
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
   margin: auto 30px;
 
 }
@@ -63,6 +77,11 @@ section{
 .main-content{
   margin: 0 150px;
 }
+.container {
+  box-sizing: border-box;
+  padding: auto 12px;
+  margin: auto;
+}
 .banner-text-content{
   margin: 20px 0;
 }
@@ -76,17 +95,52 @@ section{
   max-width: 250px;
 
 }
-.newsfeed ul{
+/* Placeholder style until I bring across the uikit-body stylesheet */
+.card {
+  background-color: #fff;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border: 1px solid #555;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.card__wrapper{
+  display: flex;
+  -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  -webkit box-align: baseline;
+  align-items: baseline;
+  flex: auto;
+  padding: 20px;
+}
+.card__image{
+  width: 100%;
+}
+.card__headline{
+  display: inline-block;
+  border-bottom: solid 1px #1B7991;
+}
+.card__text{
+  margin-bottom: auto;
+  color: #313131;
+}
+.newsfeed ul {
   list-style: none;
+  padding-left: 0;
+}
+.list-404 ul{
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.6;
 }
 .newsfeed header{
   height: 45px;
 }
 .link-inline{
   float: right;
-}
-.banner {
-  width: 100%;
 }
 .about-dat{
   margin-bottom: 40px;
