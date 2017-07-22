@@ -39,12 +39,14 @@ h3{
 section{
   margin-bottom: 20px;
 }
-#site-brand img{
-  float: left;
+.logo{
+  background: grey url('logo.png');
   display: block;
+  float: left;
   height: 40px;
   width: 40px;
   margin: 15px;
+  text-indent: -9999px;
 }
 #site-brand h1{
   font-size: 20px;
@@ -142,6 +144,8 @@ section{
 }
 .link-inline{
   float: right;
+  position: relative;
+  top: 3px;
 }
 .about-dat{
   margin-bottom: 40px;
